@@ -1,0 +1,137 @@
+body{
+	font-family: Segoe UI;
+	background-color: #CCCCFF;
+	background-position: top center;
+	background-size: cover;
+	display: inline-block;
+}
+
+p{
+	margin: 20px auto;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.h-p-bar1{
+	height: 60px;
+	background-color: #00001a;
+	padding: 3px;
+}
+
+.h-p-bar2{
+	height: 35px;
+	background-color: #000066;
+	padding: 3px;
+}
+
+
+#pa1{
+	text-align: left;
+	margin-top: 0px;
+	height: 60px;
+	width: 145px;
+	background-color: red;
+}
+
+#welcome{
+	float: right;
+	color: white;
+	font-size: 25px;
+	margin-top: 12px;
+	margin-right: 20px;
+}
+
+#img-logo1{
+	margin-left: 20px;
+	height: 100%
+}
+
+#img-logo2{
+	height: 100%
+}
+
+#divimg{
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	font-size: 20pt;
+}
+
+p{
+	font-family: Arial;
+	font-size: 15pt;
+	text-align: justify;
+}
+
+table{
+	margin: auto;
+}
+
+#pie{
+	text-align: center;
+	background-color: #00001a;
+	color: #e6e6ff;
+	height: 25px;
+}
+
+
+/*------------------------------------------------------------------*/
+* {
+margin: 0px;
+padding: 0px;
+}
+
+#menu {text-align: center;
+font-size: 10pt;
+width: 820px;
+margin: 0px; /*auto*/
+}
+
+#menu ul { list-style-type: none;}
+
+#menu ul li.nivel1 { float: left;
+width: 162px;
+margin-right: 2px;
+}
+
+#menu ul li a {display: block;
+text-decoration: none;
+color: #e6e6ff;
+background-color: #000099;
+border: solid 1px #000099;
+padding: 8px;
+position: relative;
+}
+
+#menu ul li:hover {position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {background-color: #b3b3ff;
+color: #000099;
+position: relative;
+transition: background 0.2s, color 0.2s
+}
+
+#menu ul li a.nivel1 {display: block!important;display: none;
+position: relative;
+}
+#menu ul li ul {display: none;
+}
+#menu ul li a:hover ul, #menu ul li:hover ul {display: block;
+position: absolute;left: 0px;
+}
+#menu ul li ul li a {width: 160px;
+padding: 6px 0px 8px 0px;
+border-top-color: #000;
+}
+#menu ul li ul li a:hover {border-top-color: #000;
+position: relative;
+}
+table.falsa {border-collapse:collapse;
+border:0px;
+float: left;
+position: relative;
+}
+/*------------------------------------------------------------------*/
