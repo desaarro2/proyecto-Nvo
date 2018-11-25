@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro NVO</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos2.css">
+	<script> 
+		function validar(miform){
+			if (this.corr.value=="") {
+				alert("campo Correo no puede estar vacío")
+				this.corr.focus();
+				return false;
+			}
+			if (this.nomb.value=="") {
+				alert("campo nombre no puede estar vacío")
+				this.nomb.focus();
+				return false;
+			}
+			if (this.pass.value=="") {
+				alert("campo contraseña no puede estar vacío")
+				this.pass.focus();
+				return false;
+			}
+			if (this.pass2.value=="") {
+				alert("campo contraseña no puede estar vacío")
+				this.pass2.focus();
+				return false;
+			}
+			if(this.pass.value!=this.pass2.value){
+				alert("Claves no coinciden");
+				this.pass.focus();
+				return false;
+			}
+			return true;
+
+		}
+
+	</script>
+</head>
+
+<body>
+	<h1> Registro Nuevo Cliente</h1>
+		<form action="p1.php" method="post" onsubmit="return validar(this)">  <!--this toma la etiqueta completa -->
+		<input type="text" id= "corr" name="correo"> Correo <br>
+		<input type="text" id= "nomb" name="nomb"> Nombre usuario<br>
+		<input type="password" id="pass" name="pass"> Clave <br>
+		<input type="password" id="pass2" name="pass2" > Repita Clave <br>
+		Ciudad <select id="ciud" name="ciud">
+			<option>Santiago</option>
+			<option>Temuco</option>
+			<option>Villarrica</option>
+			</select><br>	
+		Recibir correo de nuevos productos<input type="checkbox" name="info"><br>
+		<input type="submit" name="Enviar">
+
+
+</body>
+</html>
